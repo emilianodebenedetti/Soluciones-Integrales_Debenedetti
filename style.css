@@ -1,0 +1,491 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Logo principal */
+.logo {
+    width: 180px; 
+    height: auto;
+    margin-bottom: 7px;
+}
+
+
+/* encabezado(negro) */
+.encabezado { 
+    height: 68px;  
+    width: 100%;
+    position: fixed;
+    display: flex;
+   /*  grid-template-columns: repeat(2,1fr); */ /* */
+    justify-content: space-between;
+    align-items:flex-end;
+    /* añadir sombra */
+    z-index: 999;
+    box-shadow: 5px 5px 10px rgb(22, 22, 22);
+}
+
+/* BARRA NAVEGACION (MENU) */
+.menu {
+    display: flex; 
+    justify-content: flex-end; 
+    align-items:flex-end;
+    color: blanchedalmond;
+    background-color: rgb(8, 8, 8);
+    list-style: none;
+    display: block;
+    float: left;
+}
+.lista {
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+}
+.lista li {
+    border-radius: 3px;
+    margin: 0 5px;
+}
+.lista li a {
+    padding: 7px 13px;
+    text-decoration: none;
+    font-size: 13px;
+    display: block;/* para q ocupen todo el espacio del li */
+    text-transform: uppercase;
+    color: white;
+}
+.lista li a:hover {   
+    border-bottom:brown 2px solid;
+    clip-path: view-box;
+    width:fit-content;
+    transition: width 2s;
+}
+nav .menu li ul {
+    display: none;
+    position: absolute;
+    min-width: none;
+    min-height: 10px;
+}
+
+.menu li {
+    width: 25%;
+    font-size: 20px;
+}
+ul ul {
+    position: absolute;
+    display: none;
+ }
+ul ul li {
+    display: block;
+ }
+ul li:hover ul {
+    display:block;
+ }
+  
+.lista li .sublista {
+    position: absolute;
+    background: black;
+    width: 200px;
+ } 
+
+body {
+    background-color: brown;
+}
+
+.indexImg {
+    width: 100%;
+    height: 300px;
+    z-index: 500;
+}
+#carouselExampleIndicators {
+    box-shadow: 8px 8px 15px rgb(22, 22, 22);
+}
+
+.letraMain {
+    font-family: 'Estonia',cursive;
+    text-align: center;
+}
+.Slogan {
+    font-weight:bold;
+    font-size: 70px;
+    margin-top: 4%;
+    margin-bottom: 3%;
+}
+.subLetraMain {
+    font-weight: lighter;
+    font-size: 40px;
+    margin-bottom: 4%;
+}
+  
+    
+.linksContainer {
+    display: flex;
+    justify-content: center;
+}
+.links {
+    color: antiquewhite;
+    filter: brightness(75%);
+}
+.links:hover {
+    color: antiquewhite;
+    transition: .7s;
+    filter: brightness(200%);
+}
+img.redes {
+    max-width: 55px;     
+    filter: invert(1); 
+    padding: 10px;
+}
+
+img.redes:hover {
+    /* filter:brightness(100%); */ 
+    transition: .7s;
+    transform: translate(0px, -10px);
+}
+     
+     
+/* Seccion clientes */
+.seccionClientes {
+    display: grid;
+    grid-template-columns: repeat(4,1fr); 
+}
+.imgClientes {
+    margin: 3px;
+    padding: 5%;
+    max-width:180px; 
+}
+  
+
+/* parte contacto */
+.formulario {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 0%;
+    display: grid;
+    grid-template-columns: 49% 49%;
+    justify-content: center;
+}
+.divFormUno {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+/*  .divFormDos textarea {
+     height: ;
+}  */
+.divFormUno input {
+    width: 80%;
+    height: 25px;
+}
+.divFormDos textarea {
+    width: 85%;
+}   
+.botonEnviar {
+    display: flex;
+    justify-items: center;
+   
+}
+.ubicacion {
+    display: flex;
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+
+
+
+/* acerca fuentes */
+.contenido p {
+    padding: 0% 5% 3% 5%;
+    font-size: 19px;
+    font-family: 'PT Serif', serif;
+}
+
+.contenido h1 {
+    padding: 3%;
+}
+
+.contenido h2 {
+    padding: 0% 0% 3% 3%;
+}
+
+.contenido ul li {
+    padding-left: 5%;
+    font-size: 19px;
+    font-family: 'PT Serif', serif;
+}
+
+.linkDecreto184 {
+    color: cornsilk;
+    font-size: 22px;
+    padding-left:3%;
+}
+
+/* parrafos pie */
+
+ #visitanos {
+    /* display: flex; */
+    display: flex;
+    align-items:flex-start;
+}
+
+.frasePie {
+    display: flex;
+    align-items:flex-end;
+} 
+
+p.pieVisible {
+    text-align: center;
+    opacity: 1;
+    font-size: 15px;
+    color: white;
+    font-family: 'PT Serif', serif;
+    display: flex;
+    justify-content: center;
+}
+/*Seccion clientes*/
+
+/*Grid-Responsive*/
+.menu_Mobile .fas{
+    margin-right: 10px;
+    font-size: 25px;
+    color: seashell;
+    cursor: pointer;
+    display: none;
+}
+#body {
+    display: grid;
+    height: 100vh; 
+    width: 100%; 
+    margin: 0 auto;  
+    grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer"; 
+    grid-template-rows: 68px auto 160px;
+}   
+    
+    header {
+        background-color: black;
+        grid-area: header;
+        grid-row: 1/2;
+        /* grid-column: 1/2; */   
+       /*  border: azure solid 5px; */
+       /* margin-bottom: ; SOMBRA*/
+    } 
+    
+    main {
+        grid-area: main;
+        grid-row: 2/3;
+        /* border: azure solid 5px; */
+    } 
+    footer {
+        background-color: black;
+        opacity: 0.6;
+        grid-area: footer;
+        grid-row: 3/4;
+        /* border: azure solid 5px; */
+        display: flex; 
+        justify-content: center; 
+        align-items:center;
+        flex-direction: column;
+        box-shadow: 20px -8px 15px rgb(22, 22, 22);
+    }
+     
+    
+
+
+    /* Propiedades para versiòn mobile */
+    @media screen and (max-width: 426px) {
+        #body {
+            display: grid;
+            height: 100vh;  
+            max-width: 100%; 
+            margin: 0 auto;  
+            grid-template-areas:
+            "header"
+            "main"
+            "footer"; 
+            grid-template-rows: 40px auto 115px;
+        } 
+        
+        /* header img.logo src:{
+            src;
+        }   */       
+        .header {
+            grid-area: 1/2;
+            background-color: black;
+        }
+        .main {
+            grid-area: 2/3;
+        }
+        .footer {
+            grid-area: 3/4;
+        }
+        .encabezado {
+            height: 50px;  
+            width: 100%;
+            position: fixed;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }  
+        .menu_Mobile .fas{
+            display: flex;
+            color: white;
+            position: fixed;
+        }
+        .menu_Mobile li{
+            border-radius: 5px;
+            margin: 0 5px;
+        }
+        .menu_Mobile li a {
+            padding: 7px 13px;
+            text-decoration: none;
+            font-size: 13px;
+            display: block;/* para q ocupen todo el espacio del li */
+            text-transform: uppercase;
+            color: white;
+        }
+        .menu_Mobile li:hover {
+            transition: .7s;    
+            border-bottom:white auto solid;
+        }
+        
+        .lista {
+            display: none;
+            position:absolute;
+            width: 100vw;
+            height: 80%;
+            background: rgb(110, 98, 98);
+            /* top: -100vh; */
+            text-align: center;
+            transition: all .6s;
+            flex-direction: column;
+        }
+        .lista li:hover {
+            background: none;
+            display: flex; 
+        }
+        .lista li a {
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+        }
+        body {
+            background-color: brown;
+        }
+        .logo {
+            width: 100px; 
+            height: auto;
+        } 
+        .indexImg {
+            width: 100%;
+            height: 100px;
+        }
+        .Slogan {
+            font-weight:bold;
+            font-size: 40px;
+        }
+        .subLetraMain {
+            font-weight: lighter;
+            font-size: 28px;
+        }
+        img.redes {
+            max-width: 40px;     
+            filter:invert(1); 
+            padding: 8px;
+        }
+        .seccionClientes {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            /* justify-content: space-between; */
+        }
+        .imgClientes {
+            margin: 3px;
+            padding: 10%;
+            max-width: 150px;
+        }  
+        
+        /* parte contacto */
+        .formulario {
+       /*  padding-left: 5%;
+        padding-right: 5%; */
+        padding-top: 0%;
+        display: grid;
+        grid-template-columns: 70%;
+        justify-content: center;
+        }
+        .divFormUno {
+            width: 45%;
+            height: auto;
+        }
+        .divFormUno input {
+            width: 250px;
+            height: 25px;
+        }
+        .divFormDos textarea {
+            width: 250px;
+            padding-left: 5%;
+        } 
+        .botonEnviar {
+            display: flex;
+            justify-items: flex-end;
+            
+        }
+        .botonEnviar input{
+            display: flex;
+            justify-items: center;
+            width: 250px;
+            justify-content: center;
+        }
+        .ubicacion iframe{
+            width: auto;
+            height: 200px;
+        }
+            
+    
+    
+    }
+    /* ANIMACIONES (Contenido de las pàginas) */
+    .mainContent {
+        animation-duration: 4s;
+        animation-name: mainContent;
+        animation-iteration-count: 1;
+    }
+    @keyframes mainContent {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+    }
+     
+
+
+     
+    /* carousel */
+    /*.carousel-inner { 
+    }*/
+/* #piePagina{
+  /*   position: absolute;   */
+    /* height: ; */
+    /*  width: 100%;
+    background: black;
+    opacity: 0.7;
+   grid-row: 3/4; */ 
+  
+   /* Carrusel iamgenes portada */
+    /* .carousel-item { 
+       max-height: 500px;
+       width: 100%;
+    } */ 
+    /* 
+         
+       1000x342px   */
+       /* 
+       
