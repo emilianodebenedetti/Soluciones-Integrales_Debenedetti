@@ -1,0 +1,61 @@
+/* Sass correspondiente a apartado contacto */
+.contenido {
+    .flex_contacto {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        
+        .formulario {
+            width: 100%;
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-top: 0%;
+            display: flex;
+            flex-direction: column;
+            
+            .divFormUno {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                & input {
+                    width: 100%;
+                    height: 40px;
+                    border-radius: 5px;
+                }
+            }
+            .divFormDos {
+                textarea {
+                    width: 100%;
+                    border-radius: 10px;
+                }
+            }
+            .botonEnviar {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 10px;
+                & input {
+                    width: 100%;
+                    height: 40px;
+                    border-radius: 5px;
+                    color: white;
+                    background-color: brown;
+                    &:hover {
+                        background-color: black;
+                        transition: 0.5s;
+                    }
+                }
+            }
+
+        }
+        .ubicacion {
+            display: flex;
+            justify-content: center;
+            padding-top: 7%;
+            padding-left: 2%;
+            padding-right: 2%;
+            padding-bottom: 3%;
+            height: 700px;
+        }
+    }
+}
