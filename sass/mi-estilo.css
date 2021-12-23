@@ -84,4 +84,75 @@
   padding-bottom: 3%;
   height: 700px;
 }
+
+.contenido .formulario {
+  padding-top: 0%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 80%;
+      grid-template-columns: 80%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 0%;
+  margin-right: 30px;
+}
+
+.contenido .formulario .divFormUno {
+  width: 100%;
+  height: auto;
+}
+
+.contenido .formulario .divFormUno input {
+  width: 250px;
+  height: 25px;
+}
+
+.contenido .formulario .divFormDos textarea {
+  width: 100%;
+  padding-left: 5%;
+}
+
+.contenido .formulario .botonEnviar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: flex-end;
+  width: 100%;
+}
+
+.contenido .formulario .botonEnviar input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  width: 250px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contenido .ubicacion {
+  width: auto;
+  height: 200px;
+}
+
+@media screen and (max-width: 990px) {
+  .contenido .flex_contacto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    /* grid-template-columns: 100%; */
+    gap: 30px;
+  }
+}
+
+/*856*/
 /*# sourceMappingURL=mi-estilo.css.map */

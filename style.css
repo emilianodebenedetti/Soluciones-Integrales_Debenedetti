@@ -213,7 +213,6 @@ img.redes:hover {
 /* parrafos pie */
 
  #visitanos {
-    /* display: flex; */
     display: flex;
     align-items:flex-start;
 }
@@ -287,10 +286,6 @@ p.pieVisible {
             "footer"; 
             grid-template-rows: 40px auto 115px;
         } 
-        
-        
-            
-                
         .header {
             grid-area: 1/2;
             background-color: black;
@@ -346,7 +341,7 @@ p.pieVisible {
         }  
         
         /* parte contacto */
-        .formulario {
+        /* .formulario {
         padding-top: 0%;
         display: grid;
         grid-template-columns: 80%;
@@ -354,53 +349,51 @@ p.pieVisible {
         align-items: center;
         padding-left: 0%;
         margin-right: 30px;
-        }
-        .divFormUno {
-            width: 45%;
+        } */
+        /* .divFormUno {
+            width: 100%;
             height: auto;
-        }
-        .divFormUno input {
+        } */
+        /* .divFormUno input {
             width: 250px;
             height: 25px;
-        }
-        .divFormDos textarea {
+        } */
+        /* .divFormDos textarea {
             width: 250px;
             padding-left: 5%;
-        } 
-        .botonEnviar {
+        } */ 
+        /* .botonEnviar {
             display: flex;
             justify-items: flex-end;
-            
-        }
-        .botonEnviar input{
+        } */
+        /* .botonEnviar input{
             display: flex;
             justify-items: center;
             width: 250px;
             justify-content: center;
-        }
-        .ubicacion {
+        } */
+        /* .ubicacion {
             width: auto;
             height: 200px;
-        }
+        } */
             
     
     
     }
     
     @media screen and (max-width: 990px) {
-    .flex_contacto {
-            display: grid;
-            grid-template-columns: 100%;
-            gap: 30px;
-        }
-        .seccionClientes {
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-            
-        }
-        .ubicacion {
-            height: 450px;        
-        }
+    /* .flex_contacto {
+        display: flex;
+        grid-template-columns:100%;
+        gap: 30px;
+    } */
+    .seccionClientes {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .ubicacion {
+        height: 450px;        
+    }
     }
     
     
