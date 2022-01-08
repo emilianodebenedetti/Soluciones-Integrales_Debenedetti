@@ -62,13 +62,13 @@
   height: 40px;
   border-radius: 5px;
   color: white;
-  background-color: brown;
+  background-color: green;
 }
 
 .contenido .flex_contacto .formulario .botonEnviar input:hover {
-  background-color: black;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  background-color: #284202;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .contenido .flex_contacto .ubicacion {
@@ -135,11 +135,6 @@
           justify-content: center;
 }
 
-.contenido .ubicacion {
-  width: auto;
-  height: 200px;
-}
-
 @media screen and (max-width: 990px) {
   .contenido .flex_contacto {
     display: -webkit-box;
@@ -152,7 +147,12 @@
     /* grid-template-columns: 100%; */
     gap: 30px;
   }
+  .contenido .flex_contacto .divFormDos {
+    width: 100%;
+  }
+  .contenido .flex_contacto .ubicacion {
+    width: auto;
+    height: 450px;
+  }
 }
-
-/*856*/
 /*# sourceMappingURL=mi-estilo.css.map */
