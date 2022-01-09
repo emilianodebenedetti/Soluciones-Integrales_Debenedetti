@@ -15,21 +15,7 @@
     box-shadow: 0px 10px 15px rgb(22, 22, 22);
     background-color: black !important;/* important provisorio */
 }
-/* .encabezado {
-    z-index: 999;
-}   */
 
-/* BARRA NAVEGACION (MENU) */
- /*.menu {
-   display: flex; 
-    justify-content: flex-end; 
-    align-items:flex-end;
-    color: white;
-    background-color: rgb(8, 8, 8);
-    list-style: none;
-    display: block;
-    float: left;
-}*/
 body {
     background-color: rgba(165, 42, 42, 1);
 }
@@ -48,21 +34,21 @@ body {
     flex-direction: column;
     align-items: center;
 }
-.letraMain {
-    font-family: 'Estonia',cursive;
-    text-align: center;
-    text-shadow: white 1px 0 10px;
-}
 .Slogan {
     font-weight:bold;
     font-size: 110px;
     margin-top: 3%;
     margin-bottom: 3%;
 }
+.letraMain {
+    font-family: 'Estonia',cursive;
+    text-align: center;
+    text-shadow: white 1px 0 10px;
+}
 .subLetraMain {
     font-weight: bolder;
     font-size: 45px;
-    margin-bottom: 4%;
+    margin: 2% 4%;
 }
 .linksContainer {
     display: flex;
@@ -90,12 +76,9 @@ img.redes:hover {
     transform: translate(0px, -10px);
 }
 
-     
-     
 /* Seccion clientes */
 .seccionClientes {
-    display: flex;
-    /* grid-template-columns: repeat(4,1fr); */ 
+    display: flex; 
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -104,65 +87,6 @@ img.redes:hover {
     padding: 1%;
     max-width: 160px; 
 } 
-  
-
-/* parte contacto */
-/* PARTE SUSTITUIDA POR SASS */
-
-/* .flex_contacto {
-    display: grid;
-    grid-template-columns: 50% 50%;
-} */
-/* .formulario {
-    width: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 0%;
-    display: flex;
-    flex-direction: column;
-} */
-/* .divFormUno {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-} */
-
-/* .divFormUno input {
-    width: 100%;
-    height: 40px;
-    border-radius: 5px;
-} */
-/* .divFormDos textarea {
-    width: 100%;
-    border-radius: 10px;
-}  */  
-/* .botonEnviar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
-} */
-/* .botonEnviar input {
-    width: 100%;
-    height: 40px;
-    border-radius: 5px;
-    color: white;
-    background-color: brown;
-} */
-/*.botonEnviar input:hover {
-     background-color: black;
-    transition: 0.5s; 
-}*/
-/* .ubicacion {
-    display: flex;
-    justify-content: center;
-    padding-top: 7%;
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-bottom: 3%;
-    height: 700px;
-} */
 /* contenedor autoajustable */
 .contenido {
     background-color:rgba(0, 0, 0, 0.6);
@@ -207,12 +131,6 @@ img.redes:hover {
 }
 
 /* parrafos pie */
-
-#visitanos {
-    display: flex;
-    align-items:flex-start;
-}
-
 .frasePie {
     display: flex;
     align-items:flex-end;
@@ -226,8 +144,6 @@ p.pieVisible {
     color: white;
     font-family: 'PT Serif', serif;
 }
-
-
 
 /*Grid-Responsive*/
 
@@ -265,9 +181,6 @@ p.pieVisible {
         box-shadow: 0px -10px 15px rgb(22, 22, 22);
     }
      
-    
-
-
     /* Propiedades para versiòn mobile */
     @media screen and (max-width: 426px) {
         #body {
@@ -336,9 +249,10 @@ p.pieVisible {
             font-weight: lighter;
             font-size: 28px;
         }
-        #visitanos {
+        .visitanos {
             display: flex;
             align-items:flex-start;
+            padding-top: 15px;
         }
         img.redes {
             max-width: 40px;     
@@ -355,47 +269,7 @@ p.pieVisible {
             margin: 1%;
             padding: 3%;
             max-width: 120px;
-        }  
-        
-        /* parte contacto */
-        /* .formulario {
-        padding-top: 0%;
-        display: grid;
-        grid-template-columns: 80%;
-        justify-content: center;
-        align-items: center;
-        padding-left: 0%;
-        margin-right: 30px;
-        } */
-        /* .divFormUno {
-            width: 100%;
-            height: auto;
-        } */
-        /* .divFormUno input {
-            width: 250px;
-            height: 25px;
-        } */
-        /* .divFormDos textarea {
-            width: 250px;
-            padding-left: 5%;
-        } */ 
-        /* .botonEnviar {
-            display: flex;
-            justify-items: flex-end;
-        } */
-        /* .botonEnviar input{
-            display: flex;
-            justify-items: center;
-            width: 250px;
-            justify-content: center;
-        } */
-        /* .ubicacion {
-            width: auto;
-            height: 200px;
-        } */
-            
-    
-    
+        }            
     }
     
     @media screen and (max-width: 990px) {
@@ -409,10 +283,6 @@ p.pieVisible {
             font-size: 50px;
         }
     }
-    
-    
-    
-    
     
     /* ANIMACIONES (Contenido de texto) */
     .mainContent {
